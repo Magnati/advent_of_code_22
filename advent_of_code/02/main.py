@@ -70,6 +70,7 @@ tuples = [(ActionLetters.get_action(a), LETTER_TO_RESULT[b]) for a, b in tuples]
 
 results = []
 
+# 2nd Part
 for attack, needed_result in tuples:
     result = needed_result.value
     if needed_result == ResultPoints.DRAW:
@@ -83,6 +84,7 @@ for attack, needed_result in tuples:
 
     results.append(result)
 
+# 1st Part
 # for attack, action in tuples:
 #     result = ACTION_TO_POINTS[action]
 #     if attack == action:

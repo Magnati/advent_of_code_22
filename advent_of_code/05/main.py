@@ -52,13 +52,11 @@ def do_moves(move_tripples, stacks):
         print(str(move_count) + ': ' + str(stacks))
     return stacks
 
+# 1st part
 #stacks = do_moves(move_tripples, stacks)
 #print(stacks)
 
-def do_moves_2(move_tripples, stacks):
-    pass
-
-
+# 2nd part
 for slice, _from, _to in move_tripples:
     stacks[_to-1] += stacks[_from-1][-slice:]
     stacks[_from - 1] = stacks[_from-1][:-slice]

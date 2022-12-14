@@ -3,6 +3,7 @@ from advent_of_code.utils import get_input
 #line = get_input("test_input.txt")[0]
 line = get_input("input.txt")[0]
 
+# 2nd part only remains
 monitor = ''
 end_index = -1
 for i, c in enumerate(line):

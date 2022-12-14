@@ -3,6 +3,7 @@
 with open("input.txt") as input_file:
     lines = input_file.readlines()
 
+# only 2nd part still existing
 highest_tripple = [0, 0, 0]
 current_max = 0
 for line in lines:

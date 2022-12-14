@@ -1,7 +1,3 @@
-import enum
-import string
-from typing import List
-
 from advent_of_code.utils import get_input
 
 #lines = get_input("test_input.txt")
@@ -89,4 +85,3 @@ for line in lines:
     print_ht(head, tail)
 
 print(f"Tail visited {len(pos)} fields")
-

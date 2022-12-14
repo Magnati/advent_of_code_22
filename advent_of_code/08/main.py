@@ -57,6 +57,7 @@ for x in range(1, x_dim-1):
         if any([north, south, east, west]):
             visible[x][y] = True
 
+print("PART ONE")
 print_grid(visible)
 count = 0
 for line in visible:
@@ -87,9 +88,10 @@ for x in range(x_dim):
                 break
         sight[x][y] = east * west * north * south
 
+print("PART TWO")
 print_grid(sight)
 max_sight = max([max(l) for l in sight])
-print(max_sight)
+print(f"The max sight is {max_sight} at:")
 
 for x in range(x_dim):
     for y in range(x_dim):
